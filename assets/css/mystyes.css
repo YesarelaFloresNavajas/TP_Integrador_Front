@@ -1,0 +1,38 @@
+/*navbar*/
+.navbar-brand img {
+    max-width: 100px;
+}
+
+.btn-buytickets {
+    color: rgb(7, 161, 7);
+    
+}
+
+/*Conf Bs As*/
+
+ .btn-ti {
+    border-radius: 5%;
+    background-color: rgb(33, 155, 33);
+    color: white;
+ }
+
+/*form*/
+
+#btn-form {
+    background: rgb(116, 185, 13);
+    opacity: 0.75;
+    color: white;
+}
+
+ /*footer */
+.foot {
+    background: linear-gradient(to right, #023047, #023047, #005f73);
+    padding: 1.5rem;
+  }
+
+footer .nav-link {
+    color: white;
+    margin: 0 20px;
+    max-width: min-content;
+    text-align: center;
+}
