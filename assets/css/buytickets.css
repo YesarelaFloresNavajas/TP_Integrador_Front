@@ -1,0 +1,25 @@
+/*navbar*/
+.navbar-brand img {
+    max-width: 100px;
+}
+
+.btn-buytickets {
+    text-decoration: none;
+    color: rgb(7, 161, 7) !important;
+    
+}
+
+
+
+ /*footer */
+ .foot {
+    background: linear-gradient(to right, #023047, #023047, #005f73);
+    padding: 1.5rem;
+  }
+
+footer .nav-link {
+    color: white;
+    margin: 0 20px;
+    max-width: min-content;
+    text-align: center;
+}
