@@ -1,20 +1,25 @@
 
-//Definición de variables
-  //valor del Ticket
-const valueTk= 200;
-  //descuentos
-let descEstudiante = 0.8;
-let descTrainee = 0.5;
-let descJunior = 0.15;
-let descNinguno = 0;
-
-  //elementos de variables
-let cantTick = document.getElementById('amount');
-let categories = document.getElementById('categories')
-let tkPorCant = valueTk * (cantTick.value)
 
 //Total a pagar
 function total() {
+
+  
+//Definición de variables
+  //valor del Ticket
+  const valueTk= 200;
+  //descuentos
+  let descEstudiante = 0.8;
+  let descTrainee = 0.5;
+  let descJunior = 0.15;
+  let descNinguno = 0;
+
+  //elementos de variables
+  let cantTick = document.getElementById('amount');
+  let categories = document.getElementById('categories');
+  let tkPorCant = valueTk * (cantTick.value)
+
+  let totalAPagar = 0;
+
   if (categories.value == 0) {
     totalAPagar = tkPorCant - (tkPorCant * descNinguno);
   } else if (categories.value == 1) {
@@ -28,11 +33,11 @@ function total() {
 }
 
 function limpiar() {
-  document.getElementById('totPag').innerHTML = 'Total a Pagar: $ ';
-  //document.getElementById('Name').innerHTML = 'Nombre';
-  //document.getElementById('LastName').innerHTML = 'Apellido';
-  //document.getElementById('Email').innerHTML = 'Correo ';
-  //document.getElementById('amount').innerHTML = 'cantidad ';
+  document.getElementById('totPag').innerText = 'Total a Pagar: $ ';
+  //document.getElementById('Name').innerText = 'Nombre';
+  //document.getElementById('LastName').innerText = 'Apellido';
+  //document.getElementById('Email').innerText = 'Correo ';
+  //document.getElementById('amount').innerText = 'cantidad ';
   //document.getElementById('cantidad').reset();
 }
 
@@ -86,7 +91,7 @@ y.addEventListener('click', limpiar);
   //let cate = [document.getElementById('ninAnt').innerText, document.getElementById('estudiante').innerText, document.getElementById('trainee').innerText, document.getElementById('junior').innerText];
   //let porc = [1, 0.8, 0.5, 0.15];
 
-    //if (estudiante == document.getElementById('estudiante')) {
+    //if ( estudiante ==document.getElementById('estudiante')) {
     //resultado = cant - (cant * 0.8);
   //} else if (trainee == document.getElementById('trainee')) {
     //resultado = cant - (cant * 0.5);
