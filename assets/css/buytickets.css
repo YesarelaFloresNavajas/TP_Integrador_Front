@@ -5,11 +5,20 @@
 
 .btn-buytickets {
     text-decoration: none;
-    color: rgb(7, 161, 7) !important;
+    color: rgb(116, 185, 13) !important;
     
 }
 
+/*main*/
+.bor-rad {
+    border-radius: 0px !important;
+}
 
+.btn-col {
+    background: rgb(116, 185, 13) !important;
+    opacity: 0.75 !important;
+    color: white !important;
+}
 
  /*footer */
  .foot {

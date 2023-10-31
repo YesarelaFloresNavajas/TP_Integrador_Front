@@ -44,27 +44,27 @@
 
     <main>
         <!--Category cards-->
-        <section class="">
-            <div class="col-6 text-center ">
-                <div class="border border-secondary">
+        <section >
+            <div class="container fluid d-flex justify-content-center ">
+                <div class="border border-secondary border-opacity-25 ">
                     <div class="card-group align-items-center">
-                      <div class="card border border-primary">
-                        <div class="card-body">
+                      <div class="card border border-primary bor-rad">
+                        <div class="card-body text-center">
                           <h5 class="card-title">Estudiante</h5>
                           <p class="card-text">Tienen un descuento</p>
                           <p class="fw-bold">80%</p>
                           <p class="card-text"><small class="text-body-secondary">* presentar documentación</small></p>
                         </div>
                       </div>
-                      <div class="card border border-success">
-                        <div class="card-body">
+                      <div class="card border border-success ms-1 text-center bor-rad ">
+                        <div id="secondCard" class="card-body">
                             <h5 class="card-title">Trainee</h5>
                             <p class="card-text">Tienen un descuento</p>
                             <p class="fw-bold">50%</p>
                             <p class="card-text"><small class="text-body-secondary">* presentar documentación</small></p>
                         </div>
                       </div>
-                      <div class="card border border-warning">
+                      <div class="card border border-warning ms-1 text-center bor-rad ">
                         <div class="card-body">
                             <h5 class="card-title">Junior</h5>
                             <p class="card-text">Tienen un descuento</p>
@@ -78,32 +78,51 @@
         </section>
 
         <!--Form-->
-        <section>
+        <section class="container-fluid w-50 h-75">
             <div class="text-center">
-                <h5 class="fw-normal">
+                <h5 class="fw-normal pt-2">
                     VENTA
                 </h5>
                 <h1 class="fw-semibold">
                     VALOR DE TICKET $200
                 </h1>
             </div>
-            <form class="align-items-center">
-                <div>
-
+            <div class="container-fluid col-9">
+              <form class="row g-3">
+                <div class="col-md-6">
+                  <input type="text" class="form-control" id="Name" placeholder="Nombre" aria-label="Name">
                 </div>
-                <div>
-
+                <div class="col-md-6">
+                  <input type="text" class="form-control" id="LastName" placeholder="Apellido" aria-label="LastName">
                 </div>
-                <div>
-
+                <div class="col-12">
+                  <input type="email" class="form-control" id="Email" placeholder="Correo" aria-label="Email">
                 </div>
-                <div>
-                    
+                <div class="col-md-6">
+                  <label for="Amount" class="form-label">Cantidad</label>
+                  <input type="number" class="form-control" name="Amount" id="amount" placeholder="cantidad">
                 </div>
-                <div>
-
+                <div class="col-6">
+                  <label for="Category" class="form-label">Categoría</label>
+                  <select name="" id="categories" class="form-select">
+                    <option id="estudiante" value="1">Estudiante</option>
+                    <option id="trainee" value="2">Trainee</option>
+                    <option id="junior" value="3">Junior</option>
+                    <option id="ninguno" value="0">Ninguno</option>
+                  </select>
+                </div>
+                <div class="alert alert-primary opacity-75" role="alert">
+                  <p class="mb-0 opacity-100" id="totPag">Total a Pagar: $</p>
+                </div>
+                <div class="d-grid col">
+                  <button class="btn btn-col botonEnviar" id="btnBorrar" type="reset" >Borrar</button>
+                </div>
+                <div class="d-grid col">
+                  <button class="btn btn-col botonEnviar" id="btnResumen" type="button" >Resumen</button>
                 </div>
             </form>
+            </div>
+
         </section>
     </main>
 
