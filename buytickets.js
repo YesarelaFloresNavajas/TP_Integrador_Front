@@ -53,6 +53,7 @@ var y = document.getElementById('btnBorrar');
 y.addEventListener('click', limpiar);
 
 
+//pruebas para lograr hacer el ejercicio
 
 
 //function descuento(cant, porcentaje) {
