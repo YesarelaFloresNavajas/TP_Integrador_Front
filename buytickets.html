@@ -90,17 +90,17 @@
             <div class="container-fluid col-9">
               <form class="row g-3">
                 <div class="col-md-6">
-                  <input type="text" class="form-control" id="Name" placeholder="Nombre" aria-label="Name">
+                  <input type="text" class="form-control" id="Name" placeholder="Nombre" aria-label="Name" required>
                 </div>
                 <div class="col-md-6">
-                  <input type="text" class="form-control" id="LastName" placeholder="Apellido" aria-label="LastName">
+                  <input type="text" class="form-control" id="LastName" placeholder="Apellido" aria-label="LastName" required>
                 </div>
                 <div class="col-12">
-                  <input type="email" class="form-control" id="Email" placeholder="Correo" aria-label="Email">
+                  <input type="email" class="form-control" id="Email" placeholder="Correo" aria-label="Email" required>
                 </div>
                 <div class="col-md-6">
                   <label for="Amount" class="form-label">Cantidad</label>
-                  <input type="number" min="1" pattern="^[1-9]\d*$" class="form-control" name="Amount" id="amount" placeholder="cantidad">
+                  <input type="number" min="1" pattern="[1-9]{5}" maxlength="5" class="form-control" name="Amount" id="amount" placeholder="cantidad" required>
                 </div>
                 <div class="col-6">
                   <label for="Category" class="form-label">Categoría</label>
