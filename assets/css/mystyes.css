@@ -4,7 +4,8 @@
 }
 
 .btn-buytickets {
-    color: rgb(7, 161, 7);
+    text-decoration: none;
+    color: rgb(116, 185, 13) !important;
     
 }
 
@@ -15,6 +16,16 @@
     background-color: rgb(33, 155, 33);
     color: white;
  }
+
+ .carousel-item {
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .carousel-item {
+    height: 37rem;
+    min-height: 100vh;
+  }
 
 /*form*/
 
