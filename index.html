@@ -21,20 +21,20 @@
               <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="Conferencia">La Conferencia</a>
+                    <a class="nav-link active" aria-current="page" href="conferencia.html">La Conferencia</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link " href="Oradores">Los oradores</a>
+                    <a class="nav-link " href="#oradores">Los oradores</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="LugaryFecha">
+                    <a class="nav-link" href="lugaryfecha.html">
                       El lugar y la fecha
                     </a>
                   <li class="nav-item">
-                    <a class="nav-link" href="oradorform">Conviértete en orador</a>
+                    <a class="nav-link" href="#orador-form">Conviértete en orador</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link btn-buytickets" href="buytickets.html">Comprar tickets</a>
+                    <a class="nav-link btn-buytickets" href="./assets/pages/buytickets.html">Comprar tickets</a>
                   </li>
                 </ul>
               </div>
@@ -42,63 +42,69 @@
           </nav>
     </header>
     <main>
-      <!--Conf Bs As-->
+      <!--Conf Bs As con carrusel-->
       <section>
-        <div id="my-carousel" class="carousel text-light text-end" data-bs-ride="carousel">
-            <div class="carousel-inner bg-dark">
-                <div class="carousel-item active">
-                    <img src="assets/img/ba1.jpg" class="card-img opacity-50 h-100 w-100" alt="ba1">
-                    <div class="container">
-                        <div class="carousel-caption text-end pb-5 mb-5">
-                            <div class="row mar-ba">
-                                <div class="col-lg-6 offset-lg-6 mb-5">
-                                    <h3 class="h3-cb">Conf Bs As</h3>
-                                    <p class="">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
-                                    <div class="btn-confba">
-                                        <a class="btn btn-outline-light mb-5" href="#orador-form">Quiero ser orador</a>
-                                        <a class="btn btn-ti ms-2 mb-5" href="buytickets.html">Comprar tickets</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        <div id="my-carousel" class="carousel slide mb-5 " data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active bg-ba1">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org.2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#000"/></svg>
+            <div class="container">
+              <div class="carousel-caption text-end pb-5 mb-5">
+                <div class="row mar-ba">
+                  <div class="col-lg-6 offset-lg-6">
+                    <h3 class="h3-cb">Conf Bs As</h3>
+                    <p class="">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+                    <div class="btn-confba">
+                      <a class="btn btn-outline-light mb-3" href="#orador-form">Quiero ser orador</a>
+                      <a class="btn btn-ti ms-2 mb-3" href="./assets/pages/buytickets.html">Comprar tickets</a>
                     </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="assets/img/ba2.jpg" class="card-img opacity-50 h-100 w-100" alt="ba2">
-                  <div class="container">
-                      <div class="carousel-caption text-end pb-5 mb-5">
-                          <div class="row mar-ba">
-                              <div class="col-lg-6 offset-lg-6 mb-5">
-                                  <h3 class="h3-cb">Conf Bs As</h3>
-                                  <p class="">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
-                                  <div class="btn-confba">
-                                      <a class="btn btn-outline-light mb-5" href="#orador-form">Quiero ser orador</a>
-                                      <a class="btn btn-ti ms-2 mb-5" href="buytickets.html">Comprar tickets</a>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
                   </div>
                 </div>
-                <div class="carousel-item">
-                  <img src="assets/img/ba3.jpg" class="card-img opacity-50 h-100 w-100" alt="ba3">
-                  <div class="container">
-                      <div class="carousel-caption text-end pb-5 mb-5">
-                          <div class="row mar-ba">
-                              <div class="col-lg-6 offset-lg-6 mb-5">
-                                  <h3 class="h3-cb">Conf Bs As</h3>
-                                  <p class="">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
-                                  <div class="btn-confba">
-                                      <a class="btn btn-outline-light mb-5" href="#orador-form">Quiero ser orador</a>
-                                      <a class="btn btn-ti ms-2 mb-5" href="./buytickets.html">Comprar tickets</a>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                
               </div>
             </div>
+          </div>
+
+          <div class="carousel-item bg-ba2">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org.2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#000"/></svg>
+            <div class="container">
+              <div class="carousel-caption text-end pb-5 mb-5">
+                <div class="row mar-ba">
+                  <div class="col-lg-6 offset-lg-6">
+                    <h3 class="h3-cb">Conf Bs As</h3>
+                    <p class="">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+                    <div class="btn-confba">
+                      <a class="btn btn-outline-light mb-3" href="#orador-form">Quiero ser orador</a>
+                      <a class="btn btn-ti ms-2 mb-3" href="./assets/pages/buytickets.html">Comprar tickets</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item bg-ba3">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org.2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#000"/></svg>
+            <div class="container">
+              <div class="carousel-caption text-end pb-5 mb-5 ">
+                <div class="row mar-ba">
+                  <div class="col-lg-6 offset-lg-6">
+                    <h3 class="h3-cb">Conf Bs As</h3>
+                    <p class="">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+                    <div class="btn-confba">
+                      <a class="btn btn-outline-light mb-3" href="#orador-form">Quiero ser orador</a>
+                      <a class="btn btn-ti ms-2 mb-3" href="./assets/pages/buytickets.html">Comprar tickets</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#my-carousel" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Anterior</span>
@@ -111,7 +117,7 @@
 
     </section>
       <!--Oradores-->
-      <section>
+      <section id="oradores">
         <div class="container-fluid text-center">
           <p class="text-uppercase text-secondary pt-2 mb-0"> <small>CONOCE A LOS</small></p>
           <h3 class="text-uppercase">ORADORES</h3>
@@ -217,5 +223,6 @@
         </ul>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src=".//assets/js/buytickets.js"></script>
 </body>
 </html>

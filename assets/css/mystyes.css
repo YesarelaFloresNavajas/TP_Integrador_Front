@@ -9,7 +9,7 @@
     
 }
 
-/*Conf Bs As*/
+/*Conf Bs As with carousel*/
 
  .btn-ti {
     border-radius: 5%;
@@ -17,14 +17,26 @@
     color: white;
  }
 
+
+ .bg-ba1 { background-image: url(../img/ba1.jpg);}
+ .bg-ba2 {background-image: url(../img/ba2.jpg);}
+ .bg-ba3 {background-image: url(../img/ba3.jpg);}
+
  .carousel-item {
     background-size: cover;
     background-position: center center;
   }
 
+  .carousel-item svg { opacity: .7; }
+
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
+
   .carousel-item {
     height: 37rem;
-    min-height: 100vh;
+    min-height: 95vh;
   }
 
 /*form*/
@@ -55,7 +67,7 @@ footer .nav-link {
 }
 
 @media (max-width: 200px) {
-  #my-carusel .mb-5 {
+  .mar-ba{
     font-size: 10px !important;
   }
 
